@@ -11,16 +11,19 @@ body {
     background-image: url(https://www.cyberworx.in/images/services/website-startups.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 @media (min-width:950px) and (max-width:1130px) {
     body {
-        background-image:  url(https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-222549-2166711.jpg&fm=jpg);
+        background-image: url(https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-222549-2166711.jpg&fm=jpg);
     }
 }
+
 @media (max-width:950px) {
     body {
-        background-image:  url(https://thumbs.dreamstime.com/b/set-all-size-screen-devices-site-preview-computer-tablet-phone-sizes-grey-background-vector-illustration-49227033.jpg);
+        background-image: url(https://thumbs.dreamstime.com/b/set-all-size-screen-devices-site-preview-computer-tablet-phone-sizes-grey-background-vector-illustration-49227033.jpg);
+        
     }
 }
 
@@ -31,142 +34,294 @@ body {
 button {
     width: auto;
     height: auto;
-    padding: 0.5rem 3rem;
     font-size: 1.2vw;
     border-radius: 3px;
     border: none;
+    padding: 0.5vw;
 }
 
-nav {
-    height: 6vh;
-    width: 80vw;
-    margin: auto;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    border-radius: 5px;
-    padding: 0 2rem;
-    gap: 0;
-    overflow: hidden;
-}
+@media (min-width:650px) {
 
-.logo {
-    width: 10%;
-}
-
-nav ul {
-    width: 68%;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.3vw;
-    margin: 0 1.3vw;
-}
-
-.li-border {
-    border-bottom: 2px solid black;
-}
-
-nav:hover ul li {
-    opacity: 0.3;
-    transition: 0.3s;
-}
-
-nav ul li:hover {
-    opacity: 1;
-    scale: 1.3;
-    transition: 0.2s;
-}
-
-.lis {
-    position: absolute;
-    top: 1.3;
+.close-icon,.menu-bar{
     display: none;
-    width: 92%;
-    height: 80vh;
-    box-sizing: border-box;
-    margin: 3rem 0rem 0 3.3vw;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    display: none;
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    padding: 2vw;
-    overflow: auto;
 }
 
-.home {
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10vw;
+    nav {
+        height: 6vh;
+        width: 80vw;
+        margin: auto;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0 2rem;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul {
+        width: 68%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.3vw;
+        margin: 0 1.3vw;
+    }
+
+    .li-border {
+        border-bottom: 2px solid black;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .lis {
+        position: absolute;
+        top: 1.3;
+        display: none;
+        width: 92%;
+        height: 80vh;
+        box-sizing: border-box;
+        margin: 3rem 0rem 0 3.3vw;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        display: none;
+        font-size: clamp(1.5rem, 3vw, 3rem);
+        padding: 2vw;
+        overflow: auto;
+    }
+
+    nav:hover ul li {
+        opacity: 0.3;
+        transition: 0.3s;
+    }
+
+    nav ul li:hover {
+        opacity: 1;
+        scale: 1.3;
+        transition: 0.2s;
+    }
+
+
+
+
+    .home {
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10vw;
+    }
+
+    .skills,
+    .projects {
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+    }
+
+    .achievements,
+    .about {
+        width: 92%;
+        flex-direction: column;
+        font-size: 2vw;
+    }
+
+    .achievements p,
+    .about p {
+        font-size: 3vw;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    .achievements li {
+        margin-bottom: 0.4rem;
+    }
+
+    .lis h3 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .content {
+        width: 100%;
+        font-size: 2vw;
+        display: flex;
+        align-items: center;
+        gap: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    .part1 {
+        width: 18rem;
+        word-break: normal;
+    }
+
+    .part2 {
+        width: 70%;
+        word-break: normal;
+    }
+
+    .part2 p {
+        margin-bottom: 1rem;
+    }
+
+    .contact {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
-.skills,
-.projects {
-    flex-direction: column;
-    justify-content: initial;
-    align-items: center;
-    scroll-behavior: smooth;
-    scrollbar-width: 0;
+@media (max-width:649px) {
+    nav {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        /* align-items: center; */
+        overflow: hidden;
+
+    }
+    .close-icon{
+        text-align: end;
+        padding: 1rem 1rem 0 0;
+    }
+   .menu-bar{
+        margin-right: 2rem;
+    }
+
+    nav ul {
+        list-style: none;
+        position: absolute;
+        /* display: flex; */
+        display: none;
+        flex-direction: column;
+        font-size: 1.4rem;
+        /* margin: 0 1.3vw; */
+        gap: 3vh;
+        height: 100vh;
+        width: 50vw;
+        
+        right: 0;
+        z-index: 1;
+        background-color: yellow;
+        padding-left: 2vw;
+    }
+
+    button {
+        /* padding: 0.5rem 1rem; */
+        font-size: 1.4rem;
+    }
+
+    .logo {
+        padding-left: 2rem;
+        width: 10%;
+    }
+
+    .lis {
+        position: absolute;
+        top: 1.3;
+        display: none;
+        width: 92%;
+        height: 80vh;
+        box-sizing: border-box;
+        margin: 3rem 0rem 0 3.3vw;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        display: none;
+        font-size: 5.8vw;
+        padding: 2vw;
+        overflow: auto;
+    }
+
+
+
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills,
+    .projects {
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+    }
+
+    .achievements,
+    .about {
+        width: 92%;
+        flex-direction: column;
+        font-size: 5vw;
+    }
+
+    .achievements p,
+    .about p {
+        font-size: 5vw;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    .achievements li {
+        margin-bottom: 0.4rem;
+    }
+
+    .lis h3 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .content {
+        width: 100%;
+        font-size: 5vw;
+        align-items: center;
+        gap: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    .part1 {
+        font-weight: bold;
+        width: 18rem;
+        word-break: normal;
+        margin-bottom: 0.3rem;
+    }
+
+    .part2 {
+        padding-left: 1.5rem;
+        width: 100%;
+        word-break: normal;
+    }
+
+    .part2 p {
+        margin-bottom: 1rem;
+    }
+
+    .contact {
+        width: 100%;
+        /* height: 100%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-.achievements,
-.about {
-    width: 92%;
-    flex-direction: column;
-    font-size: 2vw;
-}
 
-.achievements p,
-.about p {
-    font-size: 3vw;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-
-.achievements li {
-    margin-bottom: 0.4rem;
-}
-
-.lis h3 {
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-.content {
-    width: 100%;
-    font-size: 2vw;
-    display: flex;
-    align-items: center;
-    gap: 8rem;
-    margin-bottom: 2rem;
-}
-
-.part1 {
-    width: 18rem;
-    word-break: normal;
-}
-
-.part2 {
-    width: 70%;
-    word-break: normal;
-}
-
-.part2 p {
-    margin-bottom: 1rem;
-}
-
-.contact {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .icons {
     margin-top: 2rem;
